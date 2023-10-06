@@ -1,0 +1,259 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.main{
+width: 100%;
+height: 100%;
+background-color: #f3f3f3;
+  
+}
+
+header{
+   background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+    
+}
+.nav-tag:hover{
+    color: orange;
+    padding: 5px;
+    border-bottom: 1px solid black;
+
+}
+
+nav ul{
+    display: flex;
+    flex:10;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+
+}
+nav ul li{
+   margin-right: 25px;
+    
+}
+nav ul li a{
+    text-decoration:none;
+    color :black;
+    font-weight: bold;
+   
+}
+
+
+div img{
+    position: relative;
+    margin-right: 5px;
+    border: 5px;
+    padding: 5px;
+}
+.banner-text{
+    position: absolute;
+    top:25%;
+    right:30%;
+    top: 15%;
+    left: 35%;
+    
+}
+.image-text1{
+    font-size: 30px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+.image-text2,.image-text3{
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+
+}
+.Orange{
+    color: orange;
+    font-family: "Times New Roman", Times, serif;
+}
+.shop{
+    position: absolute;
+    border: 2px solid #21252b ;
+    box-sizing: border-box;
+    color: #171d26;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 150px;
+    background-color: transparent;
+}
+.Features{
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: bold;
+    text-align: center;
+    left: 20px;
+    position: relative;
+    
+   
+}
+.features1{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+    margin-left: 150px;
+    margin-right: 150px;
+    gap: 10px;
+}
+.features2{
+    outline: 1px solid #030303;
+    outline-offset: -10px;
+    padding: 20px;
+   text-align: center;
+    background-color: white;
+   }
+   .features2:hover{
+    box-shadow: 5px 5px 10px rgb(103, 103, 103);
+    outline: auto;
+   }
+.featues-head,.featues-head2,.featues-head3{
+    color:#130f40;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+    
+}
+.readmore1,.readmore2,.readmore3{
+    border: 1px solid #130f40;
+    padding: 5px;
+    text-decoration: none;
+    color: #020259;
+     }
+
+/* Product section */
+.Products{
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: bold;
+    text-align: center;
+    }
+.Products span{
+        background:orange;
+        color: #fff;
+        display: inline-block;
+        padding: 1rem 3rem;
+        clip-path: polygon(100% 0, 93% 50%,100% 99%, 0% 100%, 7% 50%,0% 0%);
+}
+.product{
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    list-style-type: none;
+    grid-gap: 15px ;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.product1{
+    width: 225px;
+    height: 275px;
+    outline: 1px solid #030303;
+    outline-offset: -10px;
+    padding: 5px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+  
+}
+.product1:hover{
+    box-shadow: 5px 5px 10px rgb(103, 103, 103);
+    outline: auto;
+    
+}
+.Features span{
+    background:orange;
+    color: #fff;
+    display: inline-block;
+    padding: 1rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%,100% 99%, 0% 100%, 7% 50%,0% 0%);
+}
+
+                                                    /*categories*/
+.categories{
+    display: flex;
+    list-style-type: none;
+    
+  
+}
+.product-heading{
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: bold;
+    text-align: center;
+}
+.product-heading span{
+    background:orange;
+    color: #fff;
+    display: inline-block;
+    padding: 1rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%,100% 99%, 0% 100%, 7% 50%,0% 0%);
+}
+
+.categories1{
+    font-family: 'Times New Roman', Times, serif;
+    width: 250px;
+    height: 300px;
+    margin-left: 80px;
+    outline: 1px solid #030303;
+    outline-offset: -7px;
+    padding: 5px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.readmore{
+    border: 1px solid #130f40;
+    padding: 5px;
+    text-decoration: none;
+    color: #020259;
+}
+
+.categories1:hover{
+    box-shadow: 5px 5px 10px rgb(103, 103, 103);
+    outline: auto;
+}
+
+.Customers-review{
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: bold;
+    text-align: center;
+}
+.Customers-review span{
+    background:orange;
+    color: #fff;
+    display: inline-block;
+    padding: 1rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%,100% 99%, 0% 100%, 7% 50%,0% 0%);
+}
+
+.Customers-review1{
+    display: flex;
+    list-style-type: none;
+}
+.customers{
+    font-family: 'Times New Roman', Times, serif;
+    width: 250px;
+    height: 300px;
+    margin-left: 60px;
+    outline: 1px solid #030303;
+    outline-offset: -7px;
+    padding: 15px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.customers:hover{
+    box-shadow: 5px 5px 10px rgb(103, 103, 103);
+    outline: auto;
+}
+.Blogs{
+    display: flex;
+    gap:5px;
+}
