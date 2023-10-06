@@ -256,4 +256,95 @@ div img{
 .Blogs{
     display: flex;
     gap:5px;
+    
+}
+/*Footer section*/
+.heading-foother{
+    color: #242466;
+    font-style: bold;
+    font-size: 25px;
+}
+
+.footer{
+    display:flex;
+    gap: 150px;
+    margin-left:80px;
+}
+
+.footer1{
+    width: 200px;
+    color: #090909;
+    
+}
+
+.logo{
+    display: flex;
+    gap: 10px;
+   
+}
+
+.logo a{
+    height: 10px;
+  text-decoration: none;
+    background-color: #d4d4d458;
+   
+}
+
+.Contact{
+display: flex;
+flex-direction: column;
+gap: 5px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.Contact a i{
+    color: orange;
+    padding-right: 5px;
+}
+
+.quicks-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.quicks-links a{
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.quicks-links a i{
+    color: orange;
+    padding-right: 5px;
+}
+.newletters{
+   gap: 5px;
+    
+}
+.newletters form{
+    padding-bottom: 10px;
+}
+.newletters a{
+   border: 1px  solid #130f40;
+   padding: 5px;
+   border-radius: 4px;
+   cursor: pointer;
+}
+.newletters a:hover{
+    
+    background-color:orange;
+}
+.logo-card{
+    padding-top: 5px;
+}
+ .link:hover{
+    color: orange;
+}
+.links:hover{
+    color: orange;
 }
