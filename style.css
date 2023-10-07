@@ -545,7 +545,7 @@ gap: 5px;
 
 
 
-@media(min-width:320px)and(max-width:450px){
+@media screen and(min-width:320px)and(max-width:450px){
 .header-nav-tags{
     display: none;
 }
@@ -566,7 +566,7 @@ gap: 5px;
 
 
 
-@media screen and(min-width: 768px) and (max-width: 1023px){
+@media screen and(min-width: 768px) and (max-width:1024px)  {
 .main{
     width: 126%;
 }
@@ -576,59 +576,61 @@ header{
     margin-left:2em;
 }
 .main-banner{
-    height: 22em;
+    height:22em;
 }
 .banner-text{
-    left:10%;
+    /* margin-left:10%; */
+    display: none;
 }
+
 .banner{
     text-align: center;
     width: 556;
 }
-    .image-text1{
+.image-text1{
         margin-left:240px;
        font-size: 33px;
     }
-    .shop{
+.shop{
         margin-left: 100px;
     }
-    .features2{
+ .features2{
         padding: 25px;
     }
-    .image-text2,.image-text3{
+.image-text2,.image-text3{
         margin-left:200px;
         font-size: 21px;
     }
-    .shop{
+.shop{
         font-size: large;
         margin-left:1em;
     }
-    .features1{
+.features1{
         height: 23em;
         margin-left: 0;
         margin-right: 0;
     }
-    .product{
+.product{
         margin-left: 0;
         margin-right: 0;
         
     }
-    .categories{
+.categories{
         gap :2em;
     }
-    .categories1{
+ .categories1{
         
         margin-left: 0;
     }
-    .Customers-review1{
+.Customers-review1{
         margin-left: -6em;
         gap:5em;
     }
-   .customers{
+.customers{
     outline-offset: -5px;
     padding-bottom: 25px;
    }
-    .customers p{
+.customers p{
         font-size: medium;
     }
 
