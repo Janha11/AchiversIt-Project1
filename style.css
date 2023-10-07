@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --orange: #ff7800;
+    --black: #130f40;
+    --light-color: black;
+    --box-shadow: 5px .5rem 1.5rem rgba(0, 0, 0, .1);
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --outline: .1rem solid rgba(0, 0, 0, .1);
+    --outline-hover: .2rem solid var(--black);
+    --border-radius:.5rem;
+
+}
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -15,7 +30,24 @@ header{
     flex-direction: row;
     justify-content: space-between;
     margin: 5px;
-    
+}
+header section{
+    margin-left: 20px;
+}
+.logo1{
+    gap:5px;
+}
+.logo11{
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+.logo11:hover{
+color: #fff;
+background-color:orange;
+}
+.main-banner{
+    width:100%;
+    height:300px;
 }
 .nav-tag:hover{
     color: orange;
@@ -47,28 +79,35 @@ nav ul li a{
 
 div img{
     position: relative;
+    text-align: center;
     margin-right: 5px;
     border: 5px;
     padding: 5px;
-}
-.banner-text{
-    position: absolute;
-    top:25%;
-    right:30%;
-    top: 15%;
-    left: 35%;
-    
-}
-.image-text1{
-    font-size: 30px;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: bold;
-}
-.image-text2,.image-text3{
-    font-size: 20px;
-    font-family: "Times New Roman", Times, serif;
 
 }
+
+.banner-text{
+    position: absolute;
+    text-align:center;
+    top:6%;
+    left: 22%;
+    margin-top: 51px;
+    }
+.image-text1{
+    font-size: xx-large;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    margin-left: 131px;
+}
+.image-text2,.image-text3{
+    font-size: x-large;
+    font-family: "Times New Roman", Times, serif;
+    margin-left: 131px;
+}
+
+
+
+
 .Orange{
     color: orange;
     font-family: "Times New Roman", Times, serif;
@@ -76,11 +115,10 @@ div img{
 .shop{
     position: absolute;
     border: 2px solid #21252b ;
-    box-sizing: border-box;
     color: #171d26;
     cursor: pointer;
     padding: 5px;
-    margin-left: 150px;
+    text-align: center;
     background-color: transparent;
 }
 .Features{
@@ -90,9 +128,7 @@ div img{
     text-align: center;
     left: 20px;
     position: relative;
-    
-   
-}
+    }
 .features1{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
@@ -107,6 +143,8 @@ div img{
     padding: 20px;
    text-align: center;
     background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
    }
    .features2:hover{
     box-shadow: 5px 5px 10px rgb(103, 103, 103);
@@ -159,6 +197,8 @@ div img{
     background-color: white;
     text-align: center;
     cursor: pointer;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
   
 }
 .product1:hover{
@@ -206,6 +246,8 @@ div img{
     background-color: white;
     text-align: center;
     cursor: pointer;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
 }
 .readmore{
     border: 1px solid #130f40;
@@ -218,6 +260,7 @@ div img{
     box-shadow: 5px 5px 10px rgb(103, 103, 103);
     outline: auto;
 }
+               /*customer review*/
 
 .Customers-review{
     font-size: x-large;
@@ -236,6 +279,7 @@ div img{
 .Customers-review1{
     display: flex;
     list-style-type: none;
+    gap:1em;
 }
 .customers{
     font-family: 'Times New Roman', Times, serif;
@@ -248,16 +292,92 @@ div img{
     background-color: white;
     text-align: center;
     cursor: pointer;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
 }
 .customers:hover{
     box-shadow: 5px 5px 10px rgb(103, 103, 103);
     outline: auto;
 }
-.Blogs{
-    display: flex;
-    gap:5px;
-    
+
+                  /* blogs-Section*/
+
+  .heading{
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: bold;
+    text-align: center;
+  }
+  .heading span{
+    background:orange;
+    color: #fff;
+    display: inline-block;
+    padding: 1rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%,100% 99%, 0% 100%, 7% 50%,0% 0%);
+  }
+.blogs .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+    gap: 1.5rem;
 }
+
+.blogs .box-container .box {
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    background: #fff;
+    cursor: pointer;
+}
+.blogs .box-container .box:hover{
+    box-shadow: 5px 5px 10px rgb(103, 103, 103);
+    outline: auto;
+}
+
+.blogs .box-container .box img {
+    height: 11rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blogs .box-container .box .content {
+    padding: 1rem;
+}
+
+.blogs .box-container .box .content .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: var(--border);
+}
+
+.blogs .box-container .box .content .icons a {
+    color: black;
+    font-size: 1rem;
+}
+
+.blogs .box-container .box .content .icons a:hover {
+    color: var(--black);
+}
+
+.blogs .box-container .box .content .icons a i {
+    color: var(--orange);
+    padding-right: .5rem;
+}
+
+.blogs .box-container .box .content h3 {
+    color: var(--black);
+    font-size: 15px;
+    }
+
+.blogs .box-container .box .content p {
+    color: var(--light-color);
+    font-size: 15px;
+}
+
+
+
 /*Footer section*/
 .heading-foother{
     color: #242466;
@@ -284,9 +404,9 @@ div img{
 }
 
 .logo a{
-    height: 10px;
-  text-decoration: none;
-    background-color: #d4d4d458;
+height: 10px;
+text-decoration: none;
+background-color: #d4d4d458;
    
 }
 
@@ -348,3 +468,173 @@ gap: 5px;
 .links:hover{
     color: orange;
 }
+.btn{
+    position: relative;
+    border: 1px solid #130f40;
+   text-decoration: none;
+    color: #020259;
+    padding: 5px;
+    border-radius: 3px;
+    bottom: -15px;
+}
+.btn:hover{
+    color:white;
+    background-color: orange;
+}
+.readmore:hover{
+    color:white;
+    background-color: orange;
+}
+.readmore1:hover{
+    color:white;
+    background-color: orange;
+}
+.readmore2:hover{
+    color:white;
+    background-color: orange;
+}
+.readmore3:hover{
+    color:white;
+    background-color: orange;
+}
+
+.stars{
+    color: orange;
+}
+.btn1{
+ position: relative;
+    border: 1px solid #130f40;
+   text-decoration: none;
+    color: #020259;
+    padding: 5px;
+    border-radius: 3px;
+    margin-left: 10rem;
+    
+}
+.btn1:hover{
+    color:white;
+    background-color: orange;
+}
+ .credit{
+    font-size: large;
+    margin-left: 30em;
+ }
+.credit span{
+    color: orange;
+    font-style: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:320px)and(max-width:450px){
+.header-nav-tags{
+    display: none;
+}
+   
+ .heading {
+        font-size: 2.5rem;
+    }
+    .features1{
+        font-size: large;
+        grid-template-rows: repeat(3, 1fr);
+    }
+   
+
+    .footer{
+        text-align: center;
+    }
+}
+
+
+
+@media screen and(min-width: 768px) and (max-width: 1023px){
+.main{
+    width: 126%;
+}
+
+header{
+    margin:1px;
+    margin-left:2em;
+}
+.main-banner{
+    height: 22em;
+}
+.banner-text{
+    left:10%;
+}
+.banner{
+    text-align: center;
+    width: 556;
+}
+    .image-text1{
+        margin-left:240px;
+       font-size: 33px;
+    }
+    .shop{
+        margin-left: 100px;
+    }
+    .features2{
+        padding: 25px;
+    }
+    .image-text2,.image-text3{
+        margin-left:200px;
+        font-size: 21px;
+    }
+    .shop{
+        font-size: large;
+        margin-left:1em;
+    }
+    .features1{
+        height: 23em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .product{
+        margin-left: 0;
+        margin-right: 0;
+        
+    }
+    .categories{
+        gap :2em;
+    }
+    .categories1{
+        
+        margin-left: 0;
+    }
+    .Customers-review1{
+        margin-left: -6em;
+        gap:5em;
+    }
+   .customers{
+    outline-offset: -5px;
+    padding-bottom: 25px;
+   }
+    .customers p{
+        font-size: medium;
+    }
+
+    }
+
+
+
+
+

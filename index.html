@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Project</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    
     <header>
         <section>
             <img src="logo-AchieversIt.png" alt="Image-Logo"width="80" height="40">
         </section>
         <nav>
-            <ul>
+            <ul class="header-nav-tags">
                 <li><a class="nav-tag"href="" target="">Home </a></li>
                 <li><a class="nav-tag"href="#features" target=""> Features</a> </li>
                 <li><a class="nav-tag"href="#Products" target=""> Products </a></li>
                 <li><a class="nav-tag"href="#categories" target=""> Categories</a></li>
                 <li><a class="nav-tag"href="#Customers-review11" target="">Review </a></li>
-                <li><a class="nav-tag"href=" #Blogs" target=""> Blog </a></li>
+                <li><a class="nav-tag"href=" #blogs" target=""> Blog </a></li>
             </ul>
         </nav>
-        <div>
-        <img src="search.png" alt="Image problem" width="20" height="20">
-        <img src="cart.png" alt="Image problem" width="20" height="20">
-        <img src="user.png" alt="Image problem" width="20" height="20">
+        <div class="logo1">
+        <img  class =" logo11" src="search.png" alt="Image problem" width="20" height="20">
+        <img  class =" logo11" src="cart.png" alt="Image problem" width="20" height="20">
+        <img  class =" logo11"  src="user.png" alt="Image problem" width="20" height="20">
         </div>
     </header>
 
@@ -32,7 +33,7 @@
     <div class="main">
 
     <div class="banner">
-        <img src="image/banner-bg.webp"alt="banner"width="100%" height="300">
+        <img class="main-banner"src="image/banner-bg.webp"alt="banner">
         <div class="banner-text">
         <p class="image-text1"> Fresh And <span class="Orange">Organic</span> Products For Your</p>
         <p class="image-text2">Lorem ipsum dolor sit amet consectetur adipisicing Elit.Aliquam </p>
@@ -75,13 +76,15 @@
            <p>Cucumber</p>
             <div class="price">Rs-15/- </div>
             <div class="stars">
+            <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
+            </div>
           </div>
-          <a href="#" class="btn">add to cart</a>
+          <a href="#" class="btn">Add to cart</a>
         </li>
            <li class="product1"> <img src="image/product-2.png " alt="productimg" width="120" height="120"> 
             <p>Waternelon</p>
@@ -93,7 +96,7 @@
              <i class="fas fa-star"></i>
              <i class="fas fa-star-half-alt"></i>
            </div>
-           <a href="#" class="btn">add to cart</a>
+           <a href="#" class="btn">Add to Cart</a>
          </li>
 
          <li class="product1"> <img src="image/product-3.png " alt="productimg" width="120" height="120"> 
@@ -106,7 +109,7 @@
              <i class="fas fa-star"></i>
              <i class="fas fa-star-half-alt"></i>
            </div>
-           <a href="#" class="btn">add to cart</a>
+           <a href="#" class="btn">Add to Cart</a>
          </li>
 
          <li class="product1"> <img src="image/product-4.png " alt="productimg" width="120" height="120"> 
@@ -119,7 +122,7 @@
              <i class="fas fa-star"></i>
              <i class="fas fa-star-half-alt"></i>
            </div>
-           <a href="#" class="btn">add to cart</a>
+           <a href="#" class="btn">Add to Cart</a>
          </li>
 
          <li class="product1"> <img src="image/product-4.png " alt="productimg" width="120" height="120"> 
@@ -132,7 +135,7 @@
              <i class="fas fa-star"></i>
              <i class="fas fa-star-half-alt"></i>
            </div>
-           <a href="#" class="btn">add to cart</a>
+           <a href="#" class="btn">Add to Cart</a>
          </li>
 
          <li class="product1"> <img src="image/product-5.png " alt="productimg" width="120" height="120"> 
@@ -145,7 +148,7 @@
              <i class="fas fa-star"></i>
              <i class="fas fa-star-half-alt"></i>
            </div>
-           <a href="#" class="btn">add to cart</a>
+           <a href="#" class="btn">Add to Cart</a>
          </li>
 
          <li class="product1"> <img src="image/product-6.png " alt="productimg" width="120" height="120"> 
@@ -158,7 +161,7 @@
              <i class="fas fa-star"></i>
              <i class="fas fa-star-half-alt"></i>
            </div>
-           <a href="#" class="btn">add to cart</a>
+           <a href="#" class="btn">Add to Cart</a>
         </li>
         <li class="product1"> <img src="image/product-6.png " alt="productimg" width="120" height="120"> 
             <p>Veg-Combo</p>
@@ -170,7 +173,7 @@
              <i class="fas fa-star"></i>
              <i class="fas fa-star-half-alt"></i>
            </div>
-           <a href="#" class="btn">add to cart</a>
+           <a href="#" class="btn">Add to Cart</a>
          </li>
 
 </ul>
@@ -181,7 +184,7 @@
     <img src="image/cat-1.png" alt="image" width="150" height="150">
     <p> Vegitables</p>
     <p> Upto 45% Off</p>
-    <a href="#" class="btn">Show Now</a>
+    <a href="#" class="readmore">Show Now</a>
     </li>
     <li class="categories1"> 
       <img src="image/cat-2.png" alt="image" width="150" height="150">
@@ -266,45 +269,64 @@
     </div>
   </li>
 </ul>
+
                                                        <!-- Blogs Section-->
-<section class="Blogs" id="Blogs">
-  <div class="blog1">
-   <img src="image/blog-1.jpg" alt=" Image" width="150" height="150">
-   <i class="fa-regular fa-user"></i>
-   <label> By User</label>
-   <i class="fa-regular fa-calendar-days"></i>
-   <p>1st May,2021</p>
-   <P> Fresh And Organic Vegitables And Fruits</P>
-   <p> Lorem ipsum dolor sit, Amet 
-    consectetur adipisicing Eli Veniam Expedita </p>
-    <a href="#"> Read More</a>
+<!-- blogs section starts -->
+
+<section class="blogs" id="blogs">
+
+  <h1 class="heading">Our <span>Blogs</span></h1>
+
+  <div class="box-container">
+
+      <div class="box">
+          <img src="image/blog-1.jpg" alt="">
+          <div class="content">
+              <div class="icons">
+                  <a href="#"><i class="fas fa-user"></i>by user</a>
+                  <a href="#"><i class="fas fa-calendar"></i>1st may, 2022</a>
+              </div>
+
+              <h3>Fresh and Organic Vegetables ad Fruits</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, necessitatibus?</p>
+              <a href="#" class="btn1">Read more</a>
+          </div>
+      </div>
+
+
+      <div class="box">
+          <img src="image/blog-2.jpg" alt="">
+          <div class="content">
+              <div class="icons">
+                  <a href="#"><i class="fas fa-user"></i>by user</a>
+                  <a href="#"><i class="fas fa-calendar"></i>1st may, 2022</a>
+              </div>
+
+              <h3>Fresh and Organic Vegetables ad Fruits</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, necessitatibus?</p>
+              <a href="#" class="btn1">Read more</a>
+          </div>
+      </div>
+
+      <div class="box">
+          <img src="image/blog-3.jpg" alt="">
+          <div class="content">
+              <div class="icons">
+                  <a href="#"><i class="fas fa-user"></i>by user</a>
+                  <a href="#"><i class="fas fa-calendar"></i>1st may, 2022</a>
+              </div>
+
+              <h3>Fresh and Organic Vegetables ad Fruits</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, necessitatibus?</p>
+              <a href="#" class="btn1">Read more</a>
+          </div>
+      </div>
+
+      
+
   </div>
 
-  <div class="blog1">
-    <img src="image/blog-2.jpg" alt=" Image" width="150" height="150">
-    <i class="fa-regular fa-user"></i>
-    <p> By User</p> By User
-    <i class="fa-regular fa-calendar-days"></i>
-    <p>1st May,2021</p>
-    <P> Fresh And Organic Vegitables And Fruits</P>
-    <p> Lorem ipsum dolor sit, Amet 
-     consectetur adipisicing Eli Veniam Expedita </p>
-     <a href="#"> Read More</a>
-   </div>
-
-   <div class="blog1">
-    <img src="image/blog-3.jpg" alt=" Image"width="150" height="150">
-    <i class="fa-regular fa-user"></i>
-    <label> By User</label>
-    <i class="fa-regular fa-calendar-days"></i>
-    <label>1st May,2021</label>
-    <P> Fresh And Organic Vegitables And Fruits</P>
-    <p> Lorem ipsum dolor sit, Amet 
-     consectetur adipisicing Eli Veniam Expedita </p>
-     <a href="#"> Read More</a>
-   </div>
 </section>
-</div>
 
 <!--Footer section-->
 <section class="footer">
@@ -357,8 +379,9 @@
 <img src="image/discover.png" width="40px" height="30px">
 </div>
   </div>
+
 </section>
-
-
+<div> <p class="credit"> Created by <span>Mr.Janha Govindan</span> | All rights reserved</p></div>
 </body>
+
 </html>
